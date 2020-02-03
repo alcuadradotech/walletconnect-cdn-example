@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  float: right;
+  width: 25%;
+}
+
+button {
+  margin-bottom: 20px;
+}

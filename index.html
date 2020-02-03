@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WalletConnect CDN</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img src="/trust-wallet-connect.jpg">
+    <div>
+        <h1>WalletConnect CDN</h1>
+        <p>
+          Connect using your compatible wallet like Trust Wallet
+              <small>
+                  (<a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp">Android</a>
+                  <a href="https://apps.apple.com/app/trust-ethereum-wallet/id1288339409">iOS</a>)
+              </small>
+        </p>
+
+        <button id="connect" onclick="connect()">Connect</button>
+
+        <table id="data" hidden>
+            <tr>
+                <th>ACCOUNT</th>
+                <td><span id="account"></span></td>
+            </tr>
+            <tr>
+                <th>CHAINID</th>
+                <td><span id="chainId"></span></td>
+            </tr>
+        </table>
+        <hr>
+        <div id="assets" hidden></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/browser@1.0.0-beta.46/lib/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/qrcode-modal@1.0.0-beta.46/lib/index.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
